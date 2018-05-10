@@ -5,14 +5,12 @@ function bubble(e) {
   // stop that propogation!
   e.stopPropgation{)
 }
-
-function capture(e) {
-  console.log(this.firstChild.nodeValue.trim() + ' captured')
+console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
 for (let i = 0; i < divs.length; i++) {
   // set the third argument to true
-  divs[i].addEventListener('click', capture, true)
+  divs[i].addEventListener('click', bubble
 }
 <html>
   <head>
