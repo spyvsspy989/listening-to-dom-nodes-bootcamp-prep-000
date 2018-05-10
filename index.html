@@ -1,6 +1,11 @@
 !DOCTYPE html>
 divs = document.querySelectorAll('div')
 
+function bubble(e) {
+  // stop that propogation!
+  e.stopPropgation{)
+}
+
 function capture(e) {
   console.log(this.firstChild.nodeValue.trim() + ' captured')
 }
